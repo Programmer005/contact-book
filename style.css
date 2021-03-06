@@ -11,7 +11,7 @@
 
 body {
   font-family: raleway;
-  background: #000;
+  background: rgb(20, 20, 20);
   color: white;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  background: black;
+  background: rgb(20, 20, 20);
   min-height: 100vh;
   width: 30vw;
   margin: auto;
@@ -52,7 +52,6 @@ body {
   background: none;
   color: #fff;
   border: 2px solid #fff;
-  outline: none;
   border-radius: 0.3em;
   margin: 1rem;
   cursor: pointer;
@@ -61,6 +60,14 @@ body {
 
 .add-contact:hover {
   border-radius: 0.5em;
+}
+
+.add-contact:focus {
+  outline: 2px solid #fff;
+}
+
+.add:focus {
+  outline: 2px solid #fff;
 }
 
 .people-li,
@@ -78,7 +85,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background: rgba(0, 0, 0, 0.212);
+  background: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
