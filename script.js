@@ -29,9 +29,13 @@ function closePopup() {
 }
 
 function createContact() {
+  const phoneSvg = document.createElement("img");
+  phoneSvg.src = "local_phone_black_24dp.svg";
+
   const contactDiv = document.createElement("div");
   contactsUl.appendChild(contactDiv);
   contactDiv.classList.add("contact");
+  contactDiv.appendChild(phoneSvg);
 
   const contactNameLi = document.createElement("li");
   contactNameLi.classList.add("name");
